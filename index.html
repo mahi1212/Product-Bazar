@@ -20,15 +20,17 @@
 <body>
   <header></header>
   <main class="main">
+    <!-- search field starts here -->
     <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
+        <input id="input-field" type="text" placeholder="Search Your Favourite Product" />
+        <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
         </button>
       </div>
     </div>
+    <!-- search field ends here -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
