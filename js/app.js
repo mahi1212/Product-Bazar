@@ -55,9 +55,15 @@ const showDetails = (data) => {
   div.innerHTML = `
   <h3>Product Details</h3> 
   <h6>Description : ${data.description}</h6>
+  <button onclick='hideDetails()'>Close</button>
   `
   parentDiv.append(div)
 }
+// Hide details btn
+const hideDetails = () =>{
+  const parentDiv = document.getElementById('details-div')
+  parentDiv.style.display = 'none'
+} 
 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;

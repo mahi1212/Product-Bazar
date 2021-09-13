@@ -2,18 +2,6 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-/* Deatails div design */
-#details-div{
-  display: none;
-  width: 350px;
-  text-align: center;
-  border: 2px double navy;
-  margin: auto;
-  margin-top: 35rem;
-  margin-left: -3.5rem;
-  padding: 5px;
-  border-radius: 10px;
-}
 
 /* search field design starts here */
 .search-field {
@@ -43,6 +31,8 @@ body {
   outline: none;
 }
 /* search field design ends here */
+
+/* Product design starts here */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -60,6 +50,7 @@ body {
   border: 1px solid rgb(223, 214, 214);
   height: 50rem;
   border-radius: 10px;
+  background: ghostwhite;
   transition: 0.3s;
 }
 .single-product:hover {
@@ -70,6 +61,8 @@ body {
   width: 150px;
   height: 150px;
 }
+/* Product design starts here */
+
 /* Cart design starts here*/
 .cart {
   width: 350px;
@@ -86,6 +79,21 @@ body {
   padding-right: 30px;
 }
 /* Cart design ends here*/
+
+/* Deatails div design */
+#details-div{
+  display: none;
+  width: 350px;
+  text-align: center;
+  border: 2px double navy;
+  margin: auto;
+  margin-top: 35rem;
+  margin-left: -3.5rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* Deatails div design */
+
 /* Resposive design using media query*/
 @media only screen and (max-width: 768px) {
   #all-products {
@@ -105,6 +113,7 @@ body {
     padding-right: 10px;
   }
 }
+/* Resposive design for mobile device */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
